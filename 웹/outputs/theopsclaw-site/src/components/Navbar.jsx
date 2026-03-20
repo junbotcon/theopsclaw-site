@@ -5,7 +5,6 @@ const links = [
   { href: '#results', label: '성과' },
   { href: '#services', label: '서비스' },
   { href: '#process', label: '프로세스' },
-  { href: '#pricing', label: '플랜' },
   { href: '#contact', label: '문의' },
 ]
 
@@ -66,7 +65,7 @@ export default function Navbar() {
             href="#contact"
             className="px-5 py-2.5 text-sm font-semibold text-white bg-primary rounded-xl hover:bg-primary-hover transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
           >
-            슬롯 확인
+            문의하기
           </a>
         </div>
 
@@ -103,7 +102,7 @@ export default function Navbar() {
               onClick={closeMenu}
               className="mt-2 inline-flex items-center justify-center px-5 py-3 text-sm font-semibold text-white bg-primary rounded-xl hover:bg-primary-hover transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
             >
-              슬롯 확인
+              문의하기
             </a>
           </div>
         </div>

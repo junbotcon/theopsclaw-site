@@ -1,10 +1,7 @@
-/* 오길비: Vanity Metric + 비즈니스 임팩트 지표 병행 */
 export const results = [
-  { value: 5000, suffix: '만+', label: '오가닉 조회수 (30일)' },
+  { value: 5000, suffix: '만+', label: '월간 조회수' },
   { value: 22, suffix: '만+', label: '저장수' },
   { value: 47, suffix: '만+', label: '공유수' },
-  { value: 340, suffix: '%', label: '평균 문의 전환율 증가' },
-  { value: 0, suffix: '원', label: '광고비 지출', displayOverride: '0' },
 ]
 
 export const screenshots = [
