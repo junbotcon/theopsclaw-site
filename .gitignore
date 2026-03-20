@@ -1,9 +1,13 @@
-# 사이트 외 디자인 자산 (로컬 전용)
+# 로컬 전용 (Git 추적 안 함)
+AGENTS.md
+CHANGELOG.md
+.agent/
 캐릭터/
 웹/_sources/
+웹/frameworks/
 제안서/
 
-# 이전 폴더 (정리 중)
+# 이전 폴더
 site/
 docs/
 
