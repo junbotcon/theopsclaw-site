@@ -33,18 +33,21 @@ export default function Process() {
     <section id="process" className="py-20 md:py-28 px-6">
       <FadeInUp>
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900">
-          일하는 방식
+          콘텐츠가 성과가 되기까지
         </h2>
         <p className="mt-4 text-center text-lg text-gray-500 max-w-2xl mx-auto">
-          체계적인 프로세스로 성과를 만듭니다
+          4단계, 성과가 나오는 구조
         </p>
       </FadeInUp>
 
-      <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+      <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto relative">
         {steps.map((item, i) => (
           <FadeInUp key={item.step} delay={i * 0.1}>
             <div className="relative p-8 bg-white rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200">
-              <span className="text-5xl font-bold text-gray-100">{item.step}</span>
+              {i < steps.length - 1 && (
+                <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-px bg-gray-200 -translate-y-1/2 z-10" />
+              )}
+              <span className="text-5xl font-bold text-gray-200">{item.step}</span>
               <div className="mt-4 w-12 h-12 flex items-center justify-center rounded-xl bg-primary-light text-primary">
                 <item.icon size={24} />
               </div>

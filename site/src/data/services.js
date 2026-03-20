@@ -2,7 +2,7 @@ export const services = [
   {
     icon: 'Sparkles',
     title: 'AI 콘텐츠 제작',
-    description: 'AI로 콘텐츠를 설계하고 제작합니다. 사람이 전략을 잡고, AI가 속도와 퀄리티를 만듭니다.',
+    description: '사람이 전략을 세우고, AI가 콘텐츠를 만듭니다. 속도와 퀄리티, 둘 다 놓치지 않습니다.',
   },
   {
     icon: 'Users',

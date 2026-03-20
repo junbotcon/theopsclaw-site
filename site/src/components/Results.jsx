@@ -34,28 +34,30 @@ export default function Results() {
       </FadeInUp>
 
       <FadeInUp delay={0.2}>
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {screenshots.map((shot) => (
-            <div
-              key={shot.src}
-              className="rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200 bg-white"
-            >
-              <img
-                src={shot.src}
-                alt={shot.alt}
-                className={`w-full h-auto ${shot.dark ? 'invert brightness-95' : ''}`}
-                loading="lazy"
-              />
-            </div>
-          ))}
+        <div className="mt-16 max-w-5xl mx-auto showcase-dark rounded-3xl p-6 md:p-10">
+          <p className="text-sm font-medium text-gray-400 mb-6 text-center tracking-wide">
+            광고 없이, 오가닉 콘텐츠만으로 만든 성과입니다 (최근 30일)
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {screenshots.map((shot) => (
+              <div key={shot.src}>
+                <p className="text-xs font-semibold text-indigo-400 mb-3 uppercase tracking-wider">
+                  {shot.label}
+                </p>
+                <div className="rounded-xl overflow-hidden ring-1 ring-white/10 hover:ring-white/25 transition-all duration-300 group">
+                  <img
+                    src={shot.src}
+                    alt={shot.alt}
+                    className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </FadeInUp>
 
-      <FadeInUp delay={0.3}>
-        <p className="mt-8 text-center text-sm text-gray-400">
-          * 실제 운영 계정 인스타그램 인사이트 데이터 (최근 30일 기준)
-        </p>
-      </FadeInUp>
     </section>
   )
 }

@@ -19,7 +19,7 @@ export default function Contact() {
             className="mt-10 inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold text-white bg-primary rounded-2xl hover:bg-primary-hover active:bg-primary-active transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 min-h-11"
           >
             <Mail size={20} />
-            이메일 문의하기
+            협업 문의하기
           </a>
         </FadeInUp>
       </div>
