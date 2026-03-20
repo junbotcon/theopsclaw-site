@@ -7,11 +7,11 @@ function StatCard({ value, suffix, label }) {
 
   return (
     <div ref={ref} className="text-center p-6">
-      <p className="text-4xl md:text-5xl font-bold text-primary">
+      <p className="text-3xl md:text-5xl font-bold text-primary whitespace-nowrap">
         {display.toLocaleString()}
-        <span className="text-3xl md:text-4xl">{suffix}</span>
+        <span className="text-2xl md:text-4xl">{suffix}</span>
       </p>
-      <p className="mt-2 text-base text-gray-500">{label}</p>
+      <p className="mt-2 text-sm md:text-base text-gray-500">{label}</p>
     </div>
   )
 }
@@ -26,7 +26,7 @@ export default function Results() {
       </FadeInUp>
 
       <FadeInUp delay={0.1}>
-        <div className="mt-16 grid grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
           {results.map((item) => (
             <StatCard key={item.label} {...item} />
           ))}
@@ -43,7 +43,7 @@ export default function Results() {
               <img
                 src={shot.src}
                 alt={shot.alt}
-                className="w-full h-auto"
+                className={`w-full h-auto ${shot.dark ? 'invert brightness-95' : ''}`}
                 loading="lazy"
               />
             </div>

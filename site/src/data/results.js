@@ -16,5 +16,6 @@ export const screenshots = [
   {
     src: '/images/account-b-views.png',
     alt: '계정 B 조회수 — 30일 2,598만 조회, 도달 624만 계정',
+    dark: true,
   },
 ]
