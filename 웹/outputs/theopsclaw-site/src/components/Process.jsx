@@ -1,30 +1,34 @@
 import { Search, Lightbulb, Sparkles, TrendingUp } from 'lucide-react'
 import FadeInUp from './FadeInUp'
 
+/*
+  오렌 클라프: 독점 시스템 프레이밍 — "이건 우리만의 방법론"
+  프로세스 자체를 Prize로 포지셔닝
+*/
 const steps = [
   {
     icon: Search,
     step: '01',
     title: '브랜드 진단',
-    description: '광고주의 브랜드, 타겟, 경쟁사를 분석하고 시장 포지션을 파악합니다.',
+    description: '업종, 타겟, 경쟁사를 분석하고 시장 포지션을 파악합니다. 이 진단만으로 대부분의 브랜드가 자신의 문제를 처음 인식합니다.',
   },
   {
     icon: Lightbulb,
     step: '02',
     title: '전략 설계',
-    description: '플랫폼별 콘텐츠 방향, 타겟 오디언스, KPI를 설정합니다.',
+    description: '플랫폼별 콘텐츠 방향, 타겟 오디언스, KPI를 설정합니다. 감이 아닌 시장 데이터에서 전략이 나옵니다.',
   },
   {
     icon: Sparkles,
     step: '03',
     title: 'AI 콘텐츠 제작',
-    description: 'AI로 콘텐츠를 제작하고, 전략에 맞게 사람이 검수합니다.',
+    description: 'AI가 속도를 내고, 사람이 전략과 퀄리티를 검수합니다. 이 조합이 주 10건+ 콘텐츠를 가능하게 합니다.',
   },
   {
     icon: TrendingUp,
     step: '04',
     title: '운영 & 최적화',
-    description: '데이터를 모니터링하고 성과 패턴을 분석해 지속적으로 최적화합니다.',
+    description: '성과 패턴을 분석하고 다음 사이클에 즉시 반영합니다. 매 사이클이 전 사이클보다 나아지는 복리 구조입니다.',
   },
 ]
 
@@ -32,11 +36,15 @@ export default function Process() {
   return (
     <section id="process" className="py-20 md:py-28 px-6">
       <FadeInUp>
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900">
-          콘텐츠가 성과가 되기까지
+        <p className="text-center text-sm font-semibold text-primary uppercase tracking-widest">
+          Our Methodology
+        </p>
+        <h2 className="mt-3 text-3xl md:text-4xl font-bold text-center text-gray-900">
+          5,000만 조회를 만든 시스템입니다
         </h2>
         <p className="mt-4 text-center text-lg text-gray-500 max-w-2xl mx-auto">
-          4단계, 성과가 나오는 구조
+          이 프로세스는 우리가 수백 번의 사이클에서 검증한 독자적 방법론입니다.<br />
+          다른 곳에서는 경험할 수 없습니다.
         </p>
       </FadeInUp>
 

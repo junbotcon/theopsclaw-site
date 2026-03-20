@@ -5,7 +5,9 @@ CHANGELOG.md
 캐릭터/
 웹/_sources/
 웹/frameworks/
-제안서/
+제안서/*
+!제안서/outputs/
+제안서/outputs/*/node_modules/
 
 # 이전 폴더
 site/
