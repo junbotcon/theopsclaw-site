@@ -1,17 +1,18 @@
+import { ChevronDown } from 'lucide-react'
 import FadeInUp from './FadeInUp'
 
 export default function Hero() {
   return (
-    <section className="hero-gradient min-h-screen flex flex-col items-center justify-center px-6 text-center pt-16">
+    <section className="hero-gradient min-h-screen flex flex-col items-center justify-center px-6 text-center pt-16 relative">
       <FadeInUp>
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-gray-900 leading-tight">
+        <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-gray-900 leading-tight">
           AI 시대,<br />
           콘텐츠의 기준이 바뀌었습니다
         </h1>
       </FadeInUp>
       <FadeInUp delay={0.15}>
         <p className="mt-6 text-lg md:text-xl text-gray-500 max-w-2xl">
-          시장을 읽는 AI, 성과를 만드는 팀
+          AI가 시장을 읽고, AI가 성과를 만듭니다
         </p>
       </FadeInUp>
       <FadeInUp delay={0.3}>
@@ -27,6 +28,12 @@ export default function Hero() {
           협업 문의하기
         </a>
       </FadeInUp>
+
+      {/* Section divider + scroll indicator */}
+      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4">
+        <div className="w-40 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent" />
+        <ChevronDown size={20} className="text-gray-400 animate-bounce" />
+      </div>
     </section>
   )
 }

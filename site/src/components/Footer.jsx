@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="text-center md:text-left">
           <p className="text-base font-bold text-gray-900">TheOpsClaw</p>
-          <p className="mt-1 text-sm text-gray-400">AI 기반 SNS 마케팅 에이전시</p>
+          <p className="mt-1 text-sm text-gray-400">AI 콘텐츠 에이전시</p>
         </div>
         <div className="flex items-center gap-4">
           <a
