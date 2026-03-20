@@ -36,7 +36,7 @@ export default function Results() {
       <FadeInUp delay={0.2}>
         <div className="mt-16 max-w-5xl mx-auto showcase-dark rounded-3xl p-6 md:p-10">
           <p className="text-sm font-medium text-gray-400 mb-6 text-center tracking-wide">
-            광고 없이, 오가닉 콘텐츠만으로 만든 성과입니다 (최근 30일)
+            오가닉 콘텐츠로 만든 성과입니다 — 최근 30일 기준
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {screenshots.map((shot) => (

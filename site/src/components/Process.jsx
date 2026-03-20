@@ -6,7 +6,7 @@ const steps = [
     icon: Search,
     step: '01',
     title: '브랜드 진단',
-    description: '광고주의 브랜드, 타겟, 경쟁사를 분석하고 현재 SNS 상태를 진단합니다.',
+    description: '광고주의 브랜드, 타겟, 경쟁사를 분석하고 시장 포지션을 파악합니다.',
   },
   {
     icon: Lightbulb,
